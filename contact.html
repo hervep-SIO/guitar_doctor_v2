@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="./css/style-global.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="contact.html">Contact</a>
+    <a href="societe.html">Société</a>
+	<a href="inscription.html">Inscription</a>
+</nav>
+
+<header>
+    <h1>Guitar Doctor - Nous contacter</h1>
+    <p>Formulaire de contact - Réponse dans les plus brefs d&eacute;lais.</p>
+  </header>
+
+  <div class="container">
+    <form action="envoi-mail.php" method="post"> <!-- Permet d'envoyer un formualire par mail -->
+      <label for="name">Votre nom :</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="subject">Objet de l'email :</label>
+      <input type="text" id="subject" name="subject"><br><br>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="important" name="important">
+        <label for="important">Important</label>
+
+        <input type="checkbox" id="urgent" name="urgent">
+        <label for="urgent">Urgent</label>
+      </div><br>
+
+      <label for="message">Votre message :</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+      <div class="button-container">
+        <button type="submit">Envoyer</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

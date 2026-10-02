@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription - Guitar Doctor</title>
+  <link rel="stylesheet" href="./css/style-global.css">
+    
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="contact.html">Contact</a>
+    <a href="societe.html">Société</a>
+	<a href="inscription.html">Inscription</a>
+</nav>
+
+  <header>
+    <h1>Guitar Doctor</h1>
+    <p>Inscription - Newsletter</p>
+</header>
+  
+  <div class="container.inscription">
+    <h2>Formulaire d'inscription</h2>
+    <form action="traitement-inscription.php" method="post">
+      <label for="login">Login :</label>
+      <input type="text" id="login" name="login" required>
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <div class="newsletter">
+  <label>Souhaitez-vous recevoir notre newsletter ?</label>
+  <div class="newsletter-options">
+    <input type="radio" id="newsletter_oui" name="newsletter" value="oui" checked>
+    <label for="newsletter_oui">Oui</label>
+    <input type="radio" id="newsletter_non" name="newsletter" value="non">
+    <label for="newsletter_non">Non</label>
+  </div>
+</div>
+
+      <button type="submit" class="submit-btn">S'inscrire</button>
+    </form>
+  </div>
+</body>
+</html>

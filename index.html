@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Guitar Doctor</title>
+  <link rel="stylesheet" href="./css/style-global.css">
+</head>
+<body>
+
+ <nav>
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="contact.html">Contact</a>
+    <a href="societe.html">Société</a>
+	<a href="inscription.html">Inscription</a>
+</nav>
+
+<header>
+    <h1>Guitar Doctor</h1>
+    <p>Accueil</p>
+</header>
+
+<h2>Connexion</h2>
+<form action="traitement-connexion.php" method="post" class="form-connexion">
+  <div class="connexion-ligne">
+    <div class="champ">
+      <label for="login">Login :</label>
+      <input type="text" id="login" name="login" required>
+    </div>
+    <div class="champ">
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="champ">
+      <input type="submit" value="Se connecter">
+    </div>
+  </div>
+</form>
+
+  <img src="images/guitar.jpg" alt="Réparation de guitare">
+
+  <table>
+    <tr>
+      <th colspan="2">Informations de contact</th>
+    </tr>
+    <tr>
+      <td>Téléphone</td>
+      <td>+33 (1) 23.45.67.89</td>
+    </tr>
+    <tr>
+      <td>Adresse <br>postale</td>
+      <td>46 rue de la musique,<br>75003 PARIS, France</td>
+    </tr>
+  </table>
+
+</body>
+</html>

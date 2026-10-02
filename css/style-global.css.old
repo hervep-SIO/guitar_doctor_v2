@@ -1,0 +1,251 @@
+/* === Style général === */
+body {
+  font-family: 'Segoe UI', Arial, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === Navigation === */
+nav {
+  background-color: #ddd;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* === Header === */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* === Images === */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* === Tableau (page accueil) === */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 300px;
+  background-color: #fff;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+td {
+  padding: 8px;
+}
+
+/* === Produits (page produits) === */
+.container.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-image {
+  width: 75%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-title {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.product-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #e67e22;
+}
+
+/* === Formulaire (page contact) === */
+.container.formulaire {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+form {
+  background-color: #dcdcdc;
+  padding: 20px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* === Formulaire (page inscription) === */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container.inscription {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.newsletter {
+  margin-top: 10px;
+}
+
+.newsletter label:first-of-type {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.newsletter-options {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
